@@ -16,7 +16,7 @@ function Add(){
     const handleSubmit = async (e) => {
         e.preventDefault();
         try{
-            const response = await axios.post('http://localhost:3000/api/add', formData);
+            const response = await axios.post('https://backend-6w3v.onrender.com/api/add', formData);
             console.log(response);
 
             alert(response.data.msg);
